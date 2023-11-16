@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('https://i.imgur.com/EXelmvX.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: flex;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Roboto' Sans-serif;
+            color: white;
+        }
+
+        #logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        #avatar {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .left-column {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid rgba(7, 7, 7, 0.2);
+            padding-right: 30px;
+        }
+
+        .right-column {
+            width: 470px;
+            margin-left: 40px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: saturate(10px);
+            width: 800px;
+            height: auto;
+            padding: 50px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1,
+        h2 {
+            margin-bottom:20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        a {
+            color: rgba(187, 41, 41, 0.782)
+        }
+
+        .section {
+            margin-bottom: 10px;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contacts {
+
+            border: 2px outset rgb(100, 200, 192);
+            box-shadow: 0 4px 30px rgba(11, 11, 75, 0.2);
+
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+
+        .contacts a {
+            display: flex;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: rgb(239, 235, 235);
+        }
+
+        .contacts img {
+            width: 30px; 
+            height: 30px; 
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="mt-40">
+        <div class="card">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Content for left column goes here --> 
+                <img id="logo" src="https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400" />
+                <img id="avatar" src="https://i.imgur.com/8dLoh2s.png" alt="" />
+                <div class="highlights">
+                    <h1>Tran Anh Duc</h1>
+                    <p>TTNT2023</p>
+                    <p>University of Information Technology, VNUHCM</p>
+                    <p>from Kon Tum</p>
+                </div>
+            </div> <!-- Right Column -->
+            <div class="right-column">
+                <!-- Content for right column goes here -->
+                <div class="section">
+                    <h2>About Me</h2>
+                    <p>An immature freshman</p>
+                    <hr>
+                </div>
+                <div class="section">
+                    <h2>My Hobbies</h2>
+                    <p>Playing sports, listening to music, watching  and reading</p>
+                    <hr>
+                </div>
+                <div class="section">
+                    <h2>My Future Goals</h2>
+                    <p>A billionaire</p>
+                    <hr>
+                </div>
+                 <div class="contacts">
+                    <h2>Contact me</h2>
+                    
+                    <a href="mailto:tmt31032005@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/6244/6244710.png" alt="">Mail &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a>
+                    <a href="https://github.com/trananhduck"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="">Github &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a>
+                    <a href="https://www.facebook.com/10001101101aa"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAAB8fHyJiYmGhobFxcU2Njb09PSAgIANDQ2Dg4NlZWWXl5e/v7+0tLSpqamfn58xMTHY2Njw8PCsrKzn5+cVFRVwcHC5ubldXV14eHhFRUXS0tJra2vg4ODJyckrKyuYrZHbAAADOUlEQVR4nO2dbXeaQBBGE0TBiOJbrNo2yf//lUWbtJw4K2tg3dnJvV/QE9zJPXCeYQXh4QEAAAAAAAAAAAAAAAAAAAAAAOD7ss9HDXneXtzz7SifB/VbTx7jswrouI8t904dSnAd2+wfobaihl30L6swgvPYXi22QQzz2Fot8iCGo9haLTIMMVRvWAYx1JQ0Txgmb0i3wBDD+IQx1JQ09rPUvmGi3eJwXIw/2FfH2eync9UwR20hDSfZr6K4LFkUxbO4fmpZmq/dVQsDhvXmWtX0DWdX/VyGCc2eFl1VZcNkusXuubNq2oarjj3UbZhIP9z5VE06abp30cQN/c6vJGx48Kt6T8OBk8YjZdyGKWSp7znAdA09N2G63cL7X7znUdughldmEz6G+rN04l01VcPf5g1f/MuKn9c/exK+sfjgdVyXsxbi59V3C/cxd7XyGkC94cxRYuN7QYv6fug4oCmmvgOoT5rXvhXUG47FAnJjsGR4w3Vz6mdPsmHlP4D6LJUNf5g39GuFZ9R3C9nwhqs71c+eehsmmqUYfitD9bOn3oaJdgsMW9jvh/aTBkMMZTQljbIsnX7G8cusyeWaU8c3N8oMTxdvfUIscLlas6K8YZV1i15VZUNls6deVWVDZVnap+hGHtKQ4Yt5w6U8pLLZU4Ci2rpFDxw7jiHDUh7SUD98k4c0lDSOIe0Yuk7W2DEc39UwRtK4DO1kqes+DnYMXTXtdIuDY0gzsyfnmX0zWYrhwEQwlH+a96hu9rTdLquqWtTLRbPYLpsX8qWJy/e//l/Zee2Csm5xifx9qeMo25Ah555aKEsaDDG8m6GmpLGfpfYN7XcLZbOnAIZkKYb6DZXNngIY2u8W9g3t90P7SYMhhjKaksZ+lto3tN8tmD1hiGF8Q2ZPGOo3tN8P7ScNhhjKaEoa+1lq39B+t2D2hCGG8Q2ZPWEoo2kvHQUx1LQNw3T8AZ9h2dswzDMsb7kXV2BDr/vVf4HhNmJfw85nRnyVWolhmJw5Mx9oR+11nfcu2BY8s82zLCufyrI8LZsXzSK79e1Rvtf1qGvk8vRc7kAhAwAAAAAAAAAAAAAAAAAAAAAAkAR/AH6aU+jaetiVAAAAAElFTkSuQmCC" alt="">Facebook</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
